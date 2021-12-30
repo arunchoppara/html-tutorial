@@ -1,2 +1,2 @@
 # html-tutorial
-HTML Tutorial
+Examples to understand the various concepts of HTML.
