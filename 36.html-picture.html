@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>HTML Picture Element</h1>
+    <h2>Determining source using min width</h2>
+    <picture>
+        <source media="(min-width: 800px)" srcset="/assets/images/image_one.jpg">
+        <source media="(min-width: 600px)" srcset="/assets/images/image_two.jpg">
+        <source media="(min-width: 400px)" srcset="/assets/images/image_three.jpg">
+        <img src="/assets/images/image_default.jpg" alt="default-image">
+    </picture>
+    <h2>Determining source using max width</h2>
+    <picture>        
+        <source media="(max-width: 400px)" srcset="/assets/images/image_three.jpg">
+        <source media="(max-width: 600px)" srcset="/assets/images/image_two.jpg">
+        <source media="(max-width: 800px)" srcset="/assets/images/image_one.jpg">
+        <img src="/assets/images/image_default.jpg" alt="default-image">
+    </picture>
+</body>
+</html>
