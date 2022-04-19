@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #head {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML ID Attribute</h1>
+    <button onclick="highlightHeading()">Highlight Heading</button>
+    
+    <h2 id="head">Heading One</h2>
+    <p id="para">Paragraph One text goes here.</p>
+    <div id="section">
+        <h3>Heading</h3>
+        <p>Paragraph text within the div</p>
+    </div>
+
+    <script>
+        function highlightHeading() {
+            var x = document.getElementById("head");
+            x.style.color = "red";
+        }
+    </script>
+</body>
+</html>

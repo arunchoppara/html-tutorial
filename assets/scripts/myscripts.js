@@ -1,0 +1,1 @@
+document.getElementById("external").innerHTML = "Hello, I am from external Javascript file.";

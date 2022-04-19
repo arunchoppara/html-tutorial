@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .head {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Class Attribute</h1>
+    <button onclick="highlightHeadings()">Highlight Headings</button>
+    
+    <h2 class="head highlight">Heading One</h2>
+    <p class="para">Paragraph One text goes here.</p>
+
+    <h2 class="head highlight">Heading Two</h2>
+    <p class="para">Paragraph Two text goes here.</p>
+
+    <h2 class="head highlight">Heading Three</h2>
+    <p class="para">Paragraph Three text goes here.</p>
+
+    <script>
+        function highlightHeadings() {
+            var x = document.getElementsByClassName("highlight");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

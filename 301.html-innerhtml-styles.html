@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #head { background-color: gray; color: red; }
+        #head { background-color: gray; color: red; }
+    </style>
+</head>
+<body>
+    <h1>HTML InnerHTML - Styles</h1>
+    <button onclick="applyStyles()">Apply Styles</button>
+
+    <div ></div>
+    
+    <h2 id="head">Heading One</h2>
+    <p id="para">Paragraph One text goes here.</p>
+    <div id="section">
+        <h3 class="head">Heading</h3>
+        <p class="para">Paragraph text within the div</p>
+        <span class="highlight"></span>
+    </div>
+
+    <script>
+        function applyStyles() {
+            var x = document.getElementById("head");
+            x.style.color = "red";
+        }
+    </script>
+</body>
+</html>
